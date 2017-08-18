@@ -20,6 +20,11 @@
     bu.frame=CGRectMake(100, 100, 100, 100);
     bu.backgroundColor=[UIColor redColor];
     [self.view addSubview:bu];
+    UILabel*la=[UILabel new];
+    la.text=@"is";
+    la.backgroundColor=[UIColor redColor];
+    la.frame=CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:la];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
