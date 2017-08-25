@@ -15,7 +15,7 @@
 		0929C2E01F46802A00049A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929C2DE1F46802A00049A3E /* LaunchScreen.storyboard */; };
 		0929C2EB1F46802A00049A3E /* iosCeshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929C2EA1F46802A00049A3E /* iosCeshiTests.m */; };
 		0929C2F61F46802A00049A3E /* iosCeshiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929C2F51F46802A00049A3E /* iosCeshiUITests.m */; };
-		09A90ADC1F4D675000C5F291 /* cehsin.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A90ADB1F4D675000C5F291 /* cehsin.m */; };
+		09A7915A1F4EB5E7008A1B12 /* 杨5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 09A791591F4EB5E7008A1B12 /* 杨5.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,7 @@
 		0929C2F11F46802A00049A3E /* iosCeshiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosCeshiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929C2F51F46802A00049A3E /* iosCeshiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosCeshiUITests.m; sourceTree = "<group>"; };
 		0929C2F71F46802A00049A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09A90ADA1F4D675000C5F291 /* cehsin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cehsin.h; sourceTree = "<group>"; };
-		09A90ADB1F4D675000C5F291 /* cehsin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cehsin.m; sourceTree = "<group>"; };
+		09A791591F4EB5E7008A1B12 /* 杨5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "杨5.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +107,7 @@
 				0929C2D41F46802A00049A3E /* AppDelegate.m */,
 				0929C2D61F46802A00049A3E /* ViewController.h */,
 				0929C2D71F46802A00049A3E /* ViewController.m */,
-				09A90ADA1F4D675000C5F291 /* cehsin.h */,
-				09A90ADB1F4D675000C5F291 /* cehsin.m */,
+				09A791591F4EB5E7008A1B12 /* 杨5.jpeg */,
 				0929C2D91F46802A00049A3E /* Main.storyboard */,
 				0929C2DC1F46802A00049A3E /* Assets.xcassets */,
 				0929C2DE1F46802A00049A3E /* LaunchScreen.storyboard */,
@@ -251,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A7915A1F4EB5E7008A1B12 /* 杨5.jpeg in Resources */,
 				0929C2E01F46802A00049A3E /* LaunchScreen.storyboard in Resources */,
 				0929C2DD1F46802A00049A3E /* Assets.xcassets in Resources */,
 				0929C2DB1F46802A00049A3E /* Main.storyboard in Resources */,
@@ -279,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0929C2D81F46802A00049A3E /* ViewController.m in Sources */,
-				09A90ADC1F4D675000C5F291 /* cehsin.m in Sources */,
 				0929C2D51F46802A00049A3E /* AppDelegate.m in Sources */,
 				0929C2D21F46802A00049A3E /* main.m in Sources */,
 			);
