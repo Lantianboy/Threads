@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0985D5481FC2B94300203C61 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985D5471FC2B94300203C61 /* ViewController1.m */; };
+		0985D54B1FC2C1DA00203C61 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985D54A1FC2C1DA00203C61 /* ImageData.m */; };
 		09E1E5341F8CC02D001F0919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E5331F8CC02D001F0919 /* AppDelegate.m */; };
 		09E1E5371F8CC02D001F0919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E5361F8CC02D001F0919 /* ViewController.m */; };
 		09E1E53A1F8CC02D001F0919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E5381F8CC02D001F0919 /* Main.storyboard */; };
@@ -35,6 +37,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095FB05D1FAAF8E300BC491B /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		095FB05E1FAAF8E300BC491B /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		095FB05F1FAAF8E300BC491B /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		095FB0601FAAF8E300BC491B /* MMDrawerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		095FB0611FAAF8E300BC491B /* MMDrawerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		095FB0621FAAF8E300BC491B /* MMDrawerVisualState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		095FB0631FAAF8E300BC491B /* MMDrawerVisualState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		095FB0641FAAF8E300BC491B /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		095FB0651FAAF8E300BC491B /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		095FB0661FAAF8E300BC491B /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		095FB0671FAAF8E300BC491B /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		0985D5461FC2B94300203C61 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		0985D5471FC2B94300203C61 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		0985D5491FC2C1DA00203C61 /* ImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		0985D54A1FC2C1DA00203C61 /* ImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		09E1E52F1F8CC02D001F0919 /* aaaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aaaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1E5321F8CC02D001F0919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E1E5331F8CC02D001F0919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095FB05C1FAAF8E300BC491B /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				095FB05D1FAAF8E300BC491B /* MMDrawerBarButtonItem.h */,
+				095FB05E1FAAF8E300BC491B /* MMDrawerBarButtonItem.m */,
+				095FB05F1FAAF8E300BC491B /* MMDrawerController+Subclass.h */,
+				095FB0601FAAF8E300BC491B /* MMDrawerController.h */,
+				095FB0611FAAF8E300BC491B /* MMDrawerController.m */,
+				095FB0621FAAF8E300BC491B /* MMDrawerVisualState.h */,
+				095FB0631FAAF8E300BC491B /* MMDrawerVisualState.m */,
+				095FB0641FAAF8E300BC491B /* MMExampleDrawerVisualStateManager.h */,
+				095FB0651FAAF8E300BC491B /* MMExampleDrawerVisualStateManager.m */,
+				095FB0661FAAF8E300BC491B /* UIViewController+MMDrawerController.h */,
+				095FB0671FAAF8E300BC491B /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
 		09E1E5261F8CC02D001F0919 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +136,15 @@
 		09E1E5311F8CC02D001F0919 /* aaaa */ = {
 			isa = PBXGroup;
 			children = (
+				095FB05C1FAAF8E300BC491B /* MMDrawerController */,
 				09E1E5321F8CC02D001F0919 /* AppDelegate.h */,
 				09E1E5331F8CC02D001F0919 /* AppDelegate.m */,
 				09E1E5351F8CC02D001F0919 /* ViewController.h */,
 				09E1E5361F8CC02D001F0919 /* ViewController.m */,
+				0985D5491FC2C1DA00203C61 /* ImageData.h */,
+				0985D54A1FC2C1DA00203C61 /* ImageData.m */,
+				0985D5461FC2B94300203C61 /* ViewController1.h */,
+				0985D5471FC2B94300203C61 /* ViewController1.m */,
 				09E1E5381F8CC02D001F0919 /* Main.storyboard */,
 				09E1E53B1F8CC02D001F0919 /* Assets.xcassets */,
 				09E1E53D1F8CC02D001F0919 /* LaunchScreen.storyboard */,
@@ -265,8 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0985D5481FC2B94300203C61 /* ViewController1.m in Sources */,
 				09E1E5371F8CC02D001F0919 /* ViewController.m in Sources */,
 				09E1E5421F8CC02D001F0919 /* main.m in Sources */,
+				0985D54B1FC2C1DA00203C61 /* ImageData.m in Sources */,
 				09E1E5341F8CC02D001F0919 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
