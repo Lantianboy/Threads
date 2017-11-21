@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor] ;
+    self.title = @"线程阻塞" ;
+    
     
     [self layoutUI] ;
 }
@@ -89,8 +91,8 @@
 {
     
     ViewController1 * vi = [[ViewController1 alloc] init] ;
-    [self presentViewController:vi animated:YES completion:nil] ;
-    NSLog(@"洗刷刷") ;
+    [self.navigationController pushViewController:vi animated:YES] ;
+    NSLog(@"进入下一页") ;
 }
 
 @end
