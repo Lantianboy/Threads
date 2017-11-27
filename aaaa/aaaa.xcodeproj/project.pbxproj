@@ -11,6 +11,7 @@
 		0985D54B1FC2C1DA00203C61 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985D54A1FC2C1DA00203C61 /* ImageData.m */; };
 		098D23C91FC41A6A00AB1CC8 /* NSOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D23C81FC41A6A00AB1CC8 /* NSOperationController.m */; };
 		098D23CD1FC421D800AB1CC8 /* BlockOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D23CC1FC421D800AB1CC8 /* BlockOperationController.m */; };
+		0990BE4B1FCBD6CF00DD0C41 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990BE4A1FCBD6CF00DD0C41 /* GCDController.m */; };
 		09E1E5341F8CC02D001F0919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E5331F8CC02D001F0919 /* AppDelegate.m */; };
 		09E1E5371F8CC02D001F0919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E1E5361F8CC02D001F0919 /* ViewController.m */; };
 		09E1E53A1F8CC02D001F0919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E1E5381F8CC02D001F0919 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 		098D23C81FC41A6A00AB1CC8 /* NSOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationController.m; sourceTree = "<group>"; };
 		098D23CB1FC421D800AB1CC8 /* BlockOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockOperationController.h; sourceTree = "<group>"; };
 		098D23CC1FC421D800AB1CC8 /* BlockOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockOperationController.m; sourceTree = "<group>"; };
+		0990BE491FCBD6CF00DD0C41 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
+		0990BE4A1FCBD6CF00DD0C41 /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
 		09E1E52F1F8CC02D001F0919 /* aaaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aaaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1E5321F8CC02D001F0919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09E1E5331F8CC02D001F0919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,8 +113,18 @@
 				098D23C81FC41A6A00AB1CC8 /* NSOperationController.m */,
 				098D23CB1FC421D800AB1CC8 /* BlockOperationController.h */,
 				098D23CC1FC421D800AB1CC8 /* BlockOperationController.m */,
+				0990BE4C1FCBD70A00DD0C41 /* GCD */,
 			);
 			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		0990BE4C1FCBD70A00DD0C41 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				0990BE491FCBD6CF00DD0C41 /* GCDController.h */,
+				0990BE4A1FCBD6CF00DD0C41 /* GCDController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		09E1E5261F8CC02D001F0919 = {
@@ -305,6 +318,7 @@
 				0985D5481FC2B94300203C61 /* ViewController1.m in Sources */,
 				098D23CD1FC421D800AB1CC8 /* BlockOperationController.m in Sources */,
 				09E1E5371F8CC02D001F0919 /* ViewController.m in Sources */,
+				0990BE4B1FCBD6CF00DD0C41 /* GCDController.m in Sources */,
 				09E1E5421F8CC02D001F0919 /* main.m in Sources */,
 				0985D54B1FC2C1DA00203C61 /* ImageData.m in Sources */,
 				09E1E5341F8CC02D001F0919 /* AppDelegate.m in Sources */,

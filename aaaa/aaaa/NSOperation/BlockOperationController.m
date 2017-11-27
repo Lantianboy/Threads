@@ -8,6 +8,7 @@
 
 #import "BlockOperationController.h"
 #import "ImageData.h"
+#import "GCDController.h"
 #define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define NAVGATION_HEIGHT (kDevice_Is_iPhoneX ? 64:88)
 @interface BlockOperationController ()
@@ -23,6 +24,14 @@
  1.使用NSBlockOperation方法，所有的操作不必单独定义方法，同时解决了只能传递一个参数的问题。
  2.调用主线程队列的addOperationWithBlock:方法进行UI更新，不用再定义一个参数实体（之前必须定义一个KCImageData解决只能传递一个参数的问题）。
  3.使用NSOperation进行多线程开发可以设置最大并发线程，有效的对线程进行了控制（下面的代码运行起来你会发现打印当前进程时只有有限的线程被创建，如上面的代码设置最大线程数为5，则图片基本上是五个一次加载的）。
+ 
+     我们共同创建
+     善和爱的世界
+     繁荣和富强的国家
+     公平公开公正的社会
+     善心善念善行善为的你我他
+     共知共享共创共赢的伙伴们
+     共建平台汇聚精英创造财富成就同事服务社会造福人类的企业生态圈
  */
 @implementation BlockOperationController
 
@@ -120,5 +129,13 @@
     UIImageView * imageView = _imageViews[index] ;
     imageView.image = image ;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    GCDController * gcd = [[GCDController alloc] init] ;
+    [self.navigationController pushViewController:gcd animated:YES] ;
+    NSLog(@"进入下一页") ;
+}
+
 
 @end
