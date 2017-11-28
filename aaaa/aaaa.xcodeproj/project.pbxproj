@@ -116,7 +116,6 @@
 				098D23C81FC41A6A00AB1CC8 /* NSOperationController.m */,
 				098D23CB1FC421D800AB1CC8 /* BlockOperationController.h */,
 				098D23CC1FC421D800AB1CC8 /* BlockOperationController.m */,
-				0990BE4C1FCBD70A00DD0C41 /* GCD */,
 			);
 			path = NSOperation;
 			sourceTree = "<group>";
@@ -159,6 +158,7 @@
 				09E1E5331F8CC02D001F0919 /* AppDelegate.m */,
 				098D23C61FC419D700AB1CC8 /* NSThread */,
 				098D23CA1FC41A7E00AB1CC8 /* NSOperation */,
+				0990BE4C1FCBD70A00DD0C41 /* GCD */,
 				09E1E5381F8CC02D001F0919 /* Main.storyboard */,
 				09E1E53B1F8CC02D001F0919 /* Assets.xcassets */,
 				09E1E53D1F8CC02D001F0919 /* LaunchScreen.storyboard */,
