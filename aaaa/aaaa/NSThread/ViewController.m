@@ -84,6 +84,7 @@
 {
     UIImage * image = [UIImage imageWithData:imageData] ;
     _imageView.image = image ;
+    NSLog(@"1111") ;
 }
 
 

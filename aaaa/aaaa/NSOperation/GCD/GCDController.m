@@ -8,6 +8,7 @@
 
 #import "GCDController.h"
 #import "ImageData.h"
+#import "GCDViewController.h"
 #define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define NAVGATION_HEIGHT (kDevice_Is_iPhoneX ? 64:88)
 @interface GCDController ()
@@ -23,6 +24,10 @@
  在GDC中一个操作是多线程执行还是单线程执行取决于当前队列类型和执行方法，只有队列类型为并行队列并且使用异步方法执行时才能在多个线程中执行。
  串行队列可以按顺序执行，并行队列的异步方法无法确定执行顺序。
  UI界面的更新最好采用同步方法，其他操作采用异步方法。
+ *****关于同步异步、串行并行的小结********
+ 1、串行队列不管是异步还是同步，都是按顺序一个一个执行的。
+ 2、同步操作不管是并行队列还是串行队列，都是按顺序一个一个执行的但是原因不一样(并行是因为线程阻塞)。
+ 3、异步操作会开辟线程，不阻塞当前线程。同步操作不会开辟线程，会阻塞当前线程。
  */
 
 - (void)viewDidLoad {
@@ -90,6 +95,7 @@
     NSData * data = [self requestData:i] ;
     //更新UI界面 此处调用了GCD主线程队列的的方法
     dispatch_queue_t mainQueue = dispatch_get_main_queue() ;
+    //同步
     dispatch_sync(mainQueue, ^{
         [self updateImageWithData:data andIndex:i] ;
     }) ;
@@ -107,5 +113,13 @@
     UIImageView * imageView = _imageViews[index] ;
     imageView.image = image ;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    GCDViewController * gcd = [[GCDViewController alloc] init] ;
+    [self.navigationController pushViewController:gcd animated:YES] ;
+    NSLog(@"进入下一页") ;
+}
+
 
 @end

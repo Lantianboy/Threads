@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0981B46F1FCCF5CC0045283D /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0981B46E1FCCF5CC0045283D /* GCDViewController.m */; };
 		0985D5481FC2B94300203C61 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985D5471FC2B94300203C61 /* ViewController1.m */; };
 		0985D54B1FC2C1DA00203C61 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985D54A1FC2C1DA00203C61 /* ImageData.m */; };
 		098D23C91FC41A6A00AB1CC8 /* NSOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D23C81FC41A6A00AB1CC8 /* NSOperationController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0981B46D1FCCF5CC0045283D /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		0981B46E1FCCF5CC0045283D /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		0985D5461FC2B94300203C61 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		0985D5471FC2B94300203C61 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		0985D5491FC2C1DA00203C61 /* ImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 			children = (
 				0990BE491FCBD6CF00DD0C41 /* GCDController.h */,
 				0990BE4A1FCBD6CF00DD0C41 /* GCDController.m */,
+				0981B46D1FCCF5CC0045283D /* GCDViewController.h */,
+				0981B46E1FCCF5CC0045283D /* GCDViewController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				098D23C91FC41A6A00AB1CC8 /* NSOperationController.m in Sources */,
+				0981B46F1FCCF5CC0045283D /* GCDViewController.m in Sources */,
 				0985D5481FC2B94300203C61 /* ViewController1.m in Sources */,
 				098D23CD1FC421D800AB1CC8 /* BlockOperationController.m in Sources */,
 				09E1E5371F8CC02D001F0919 /* ViewController.m in Sources */,
