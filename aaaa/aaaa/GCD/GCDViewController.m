@@ -21,13 +21,31 @@
     self.title = @"点击屏幕合成图片" ;
     self.view.backgroundColor = [UIColor whiteColor] ;
    
+    _img = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 300, 300)] ;
+    [self.view addSubview:self.img] ;
 
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"点击了屏幕") ;
+    //GCD延时 非阻塞的执行方式 在子线程中执行
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"点击了屏幕") ;
+    });
+    /*
+     *****几种延时方式的比较****
+     1.此方式要求必须在主线程中执行，否则无效(在子线程中可以配合runloop使用)。是一种非阻塞的执行方式，暂时未找到取消执行的方法。
+         [self performSelector:@selector(delayMethod) withObject:nil     afterDelay:1.0f];
+     
+     2.此方式要求必须在主线程中执行，否则无效。是一种非阻塞的执行方式，可以通过NSTimer类的- (void)invalidate;取消执行。
+         [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(delayMethod) userInfo:nil repeats:NO];
+     
+     3. 此方式在主线程和子线程中均可执行。是一种阻塞的执行方式，建议放到子线程中，以免卡住界面，没有找到取消执行的方法。
+         [NSThread sleepForTimeInterval:4.0f];
+         [self delayMethod];
+     */
+    
     [self layoutUI] ;
 }
 
